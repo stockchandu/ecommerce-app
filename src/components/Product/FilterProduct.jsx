@@ -39,6 +39,8 @@ export const FilterProduct = () => {
       case "1rating":
         filterProductByRatingPrice(1, "rating");
         break;
+      default:
+        break;
     }
   };
 
@@ -59,6 +61,8 @@ export const FilterProduct = () => {
         break;
       case 500:
         filterProductByRatingPrice(500, "price");
+        break;
+      default:
         break;
     }
   };
