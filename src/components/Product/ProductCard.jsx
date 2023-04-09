@@ -1,11 +1,10 @@
 import { addToCart } from "../../store/cartSlice";
+import { increaseCount } from "../../store/cartCountSlice";
 import { useSelector, useDispatch } from "react-redux";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
 export const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
-  const [countValue, setCountValue] = useState(1);
   const { cart } = useSelector((state) => state.cart.value);
   let {
     id,
@@ -18,8 +17,8 @@ export const ProductCard = ({ product }) => {
   } = product;
 
   const handleCart = (items) => {
-    setCountValue((prev) => (prev = prev + 1));
-    dispatch(addToCart({ cart: [...cart, items], count: countValue }));
+    dispatch(increaseCount());
+    dispatch(addToCart({ cart: [...cart, items] }));
   };
 
   return (

@@ -12,7 +12,6 @@ export const productSlice = createSlice({
       state.value = action.payload;
     },
     getProduct: (state, action) => {
-      // state is the previos value and action where we can get data
       state.value = action.payload;
     },
     errProduct: (state, action) => {
@@ -20,7 +19,5 @@ export const productSlice = createSlice({
     },
   },
 });
-
-// here we have to export the productSlice
 
 export const { loadProduct, getProduct, errProduct } = productSlice.actions;

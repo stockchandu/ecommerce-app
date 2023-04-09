@@ -5,12 +5,10 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 export const Header = () => {
-  const { count } = useSelector((state) => state.cart.value);
+  const { countCart } = useSelector((state) => state.cartCount);
   const [userQuery, setUserQuery] = useState("");
   const handleInput = (value) => setUserQuery(value);
-  const invisiBleSearchResult = () => {
-    setUserQuery("");
-  };
+  const invisiBleSearchResult = () => setUserQuery("");
   return (
     <>
       <div className="w-full flex justify-between border-2 p-4">
@@ -25,7 +23,7 @@ export const Header = () => {
           className="w-2/5 border-2 p-1"
           onChange={(e) => handleInput(e.target.value)}
         />
-        <Link to="cart">Cart({count}) </Link>
+        <Link to="cart">Cart({countCart}) </Link>
       </div>
 
       <div
