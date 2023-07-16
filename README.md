@@ -1,4 +1,4 @@
-## A E-commerce app with React.js
+## An E-commerce app with React.js
 
 # Features include
 
@@ -21,9 +21,6 @@
 ## How to clone the project.
 | Go to visual studio code or open any terminal |```git clone https://github.com/stockchandu/ecommerce-app``` |
 | - | - |
-
-| Visit the web app  | [Student Management](https://student-management-app-chandu.netlify.app/) |
-| --- | ---|
 
 Thank you.
 
