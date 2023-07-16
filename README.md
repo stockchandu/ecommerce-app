@@ -22,5 +22,8 @@
 | Go to visual studio code or open any terminal |```git clone https://github.com/stockchandu/ecommerce-app``` |
 | - | - |
 
+| Live  | [Ecom app ](https://e-com-reactjs-app.netlify.app/) |
+| --- | ---|
+
 Thank you.
 
