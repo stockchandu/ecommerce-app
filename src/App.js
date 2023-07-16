@@ -3,7 +3,8 @@ import { Header } from "./components/Header/Header";
 import { Body } from "./components/Body/Body";
 import { ProductCart } from "./components/Cart/ProductCart";
 import { ProductDetails } from "./components/Product/ProductDetails";
-import {PaymentPage} from "./components/Payment/PaymentPage"
+import { PaymentPage } from "./components/Payment/PaymentPage";
+
 function App() {
   return (
     <>

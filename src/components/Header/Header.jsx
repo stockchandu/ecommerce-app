@@ -1,4 +1,4 @@
-import { APP_LOGO } from "../../utils/constant";
+
 import { useState } from "react";
 import { SearchProduct } from "../Product/SearchProduct";
 import { useSelector } from "react-redux";
@@ -12,10 +12,8 @@ export const Header = () => {
   return (
     <>
       <div className="w-full flex justify-between border-2 p-4">
-        <div>
-          <Link to="/">
-            <img src={APP_LOGO} alt="searching yard logo" />
-          </Link>
+        <div class="lg:text-3xl">
+          E-commerce
         </div>
         <input
           type="text"
